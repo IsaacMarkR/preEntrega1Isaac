@@ -18,23 +18,23 @@ function Products() {
     {
       title: 'Smartwatch Futurista',
       description: 'Un reloj inteligente con funcionalidades avanzadas y un diseño innovador.',
-      imageUrl: '/path/to/smartwatch.jpg' 
+      imageUrl: 'https://i.blogs.es/1a8f0d/captura-de-pantalla-2019-02-25-a-las-18.01.07/840_560.jpg' 
     },
     {
       title: 'Auriculares Inalámbricos',
       description: 'Auriculares de alta calidad con cancelación de ruido y sonido envolvente.',
-      imageUrl: '/path/to/headphones.jpg'
+      imageUrl: 'https://elrincondechina.com/wp-content/uploads/2020/11/Red-Magic-CyberPods-TWS-2-erdc.jpg'
     },
   ];
 
   return (
     <div style={{ padding: '20px', color: 'white' }}>
-      <Typography variant="h4" gutterBottom style={{ color: 'cyan' }}>
+      <Typography variant="h4" gutterBottom style={{ color: 'cyan', textAlign: 'center' }}>
         Nuestros Productos
       </Typography>
-      <Grid container spacing={2}>
+      <Grid container spacing={2} justifyContent="center">
         {products.map((product, index) => (
-          <Grid item xs={12} sm={6} md={4} key={index}>
+          <Grid item xs={12} sm={6} md={4} key={index} style={{ display: 'flex', justifyContent: 'center' }}>
             <ProductCard title={product.title} description={product.description} imageUrl={product.imageUrl} />
           </Grid>
         ))}
