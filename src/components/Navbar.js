@@ -4,7 +4,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Button from '@mui/material/Button';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { CartWidget } from './CartWidget'
 
 const darkTheme = createTheme({
     palette: {
@@ -24,7 +24,7 @@ function Navbar() {
                 <Button color="inherit">Productos</Button>
                 <Button color="inherit">Ofertas</Button>
                 <Button color="inherit">Carrito</Button>
-                <ShoppingCartIcon sx={{ fontSize: 30 }} />
+                <CartWidget />
             </Toolbar>
         </AppBar>
     </ThemeProvider>

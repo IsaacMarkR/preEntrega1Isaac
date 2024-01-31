@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar } from './components/Navbar';
 import { Home } from './components/Home';
-import { Products } from './components/Products';
+import { ItemListContainer } from './components/ItemListContainer';
 import { BackgroundSlider } from './components/BackgroundSlider';
 
 import backgroundImage1 from './assets/futuristic1.jpg';
@@ -16,7 +16,7 @@ function App() {
       <BackgroundSlider images={backgrounds} duration={5} transition={2} />
       <Navbar />
       <Home />
-      <Products />
+      <ItemListContainer />
     </div>
   );
 }

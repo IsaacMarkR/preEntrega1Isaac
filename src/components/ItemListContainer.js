@@ -13,7 +13,7 @@ function ProductCard({ title, description, imageUrl }) {
   );
 }
 
-function Products() {
+function ItemListContainer() {
   const products = [
     {
       title: 'Smartwatch Futurista',
@@ -43,4 +43,4 @@ function Products() {
   );
 }
 
-export { Products };
+export { ItemListContainer };
